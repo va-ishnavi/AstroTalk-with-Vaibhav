@@ -1,0 +1,3296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AstoTalk with Vaibhav | Astrology & Guidance</title>
+
+  <meta name="description"
+    content="AstoTalk with Vaibhav - Astrology consultations, relationship guidance, career guidance and personalized solutions.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #090612;
+      color: white;
+    }
+
+    .heading-font {
+      font-family: "Cinzel", serif;
+    }
+
+    .gold-text {
+      background: linear-gradient(90deg, #f8d477, #fff1b0, #d99a27);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .gold-border {
+      border-color: rgba(232, 183, 76, 0.35);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.055);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(circle at 50% 30%, rgba(172, 95, 255, .20), transparent 30%),
+        radial-gradient(circle at 10% 70%, rgba(225, 171, 53, .12), transparent 25%),
+        linear-gradient(135deg, #080510 0%, #14091d 45%, #080510 100%);
+    }
+
+    .stars {
+      background-image:
+        radial-gradient(#ffffff 1px, transparent 1px),
+        radial-gradient(#ffffff 1px, transparent 1px);
+      background-size: 90px 90px, 140px 140px;
+      background-position: 0 0, 40px 60px;
+      opacity: .08;
+    }
+
+    .card-hover {
+      transition: all .35s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-9px);
+      border-color: rgba(232, 183, 76, .55);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #d99a27, #f5d16b);
+      color: #170e04;
+      transition: all .3s ease;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(230, 177, 56, .28);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(239, 196, 91, .45);
+      transition: all .3s ease;
+    }
+
+    .btn-outline:hover {
+      background: rgba(239, 196, 91, .1);
+      border-color: #e9bb52;
+      transform: translateY(-2px);
+    }
+
+    .floating {
+      animation: floating 4s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .fade-up {
+      animation: fadeUp .9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal {
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s ease;
+    }
+
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-box {
+      transform: scale(.92) translateY(20px);
+      transition: all .3s ease;
+    }
+
+    .modal.active .modal-box {
+      transform: scale(1) translateY(0);
+    }
+
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease;
+    }
+
+    .mobile-menu.active {
+      max-height: 500px;
+    }
+
+    .input-style {
+      width: 100%;
+      background: rgba(255, 255, 255, .055);
+      border: 1px solid rgba(255, 255, 255, .12);
+      color: white;
+      border-radius: 12px;
+      padding: 13px 15px;
+      outline: none;
+      transition: .3s;
+    }
+
+    .input-style:focus {
+      border-color: #e9bb52;
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .input-style::placeholder {
+      color: #928b9b;
+    }
+
+    select.input-style option {
+      background: #16101e;
+      color: white;
+    }
+
+    input[type="date"],
+input[type="time"] {
+  color-scheme: dark;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#090612]/90 backdrop-blur-xl border-b border-white/10">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+      <div class="h-20 flex items-center justify-between">
+
+        <a href="#home" class="flex items-center gap-3">
+
+          <div class="w-11 h-11 rounded-full flex items-center justify-center
+                    bg-gradient-to-br from-yellow-300 to-yellow-700 text-black">
+            <i class="fa-solid fa-star-and-crescent text-lg"></i>
+          </div>
+
+          <div>
+            <h1 class="heading-font text-lg font-bold gold-text">
+              AstoTalk
+            </h1>
+
+            <p class="text-[10px] tracking-[3px] text-gray-400 uppercase">
+              With Vaibhav
+            </p>
+          </div>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm">
+
+          <a href="#home" class="text-gray-300 hover:text-yellow-300 transition">
+            Home
+          </a>
+
+          <a href="#about" class="text-gray-300 hover:text-yellow-300 transition">
+            About Us
+          </a>
+
+          <a href="#services" class="text-gray-300 hover:text-yellow-300 transition">
+            Services
+          </a>
+
+          <a href="#appointment" class="text-gray-300 hover:text-yellow-300 transition">
+            Appointment
+          </a>
+
+           <a href="#testimonials" class="text-gray-300 hover:text-yellow-300 transition">
+            What My Clients Say
+          </a>
+
+          <a href="#contact" class="text-gray-300 hover:text-yellow-300 transition">
+            Contact
+          </a>
+
+        </nav>
+
+
+        <button onclick="openModal()" class="hidden sm:block btn-gold px-5 py-3 rounded-full text-sm font-semibold">
+          Book Appointment
+        </button>
+
+
+        <!-- Mobile Button -->
+
+        <button id="menuBtn" class="lg:hidden text-white text-2xl" aria-label="Open menu">
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+      </div>
+
+
+      <!-- Mobile Menu -->
+
+      <div id="mobileMenu" class="mobile-menu lg:hidden">
+
+        <nav class="py-5 flex flex-col gap-4 border-t border-white/10">
+
+          <a href="#home" class="mobile-link py-2 text-gray-300 hover:text-yellow-300">
+            Home
+          </a>
+
+          <a href="#about" class="mobile-link py-2 text-gray-300 hover:text-yellow-300">
+            About Us
+          </a>
+
+          <a href="#services" class="mobile-link py-2 text-gray-300 hover:text-yellow-300">
+            Services
+          </a>
+
+          <a href="#appointment" class="mobile-link py-2 text-gray-300 hover:text-yellow-300">
+            Appointment
+          </a>
+
+          <a href="#testimonials" class="mobile-link py-2 text-gray-300 hover:text-yellow-300">
+            What My Clients Say
+          </a>
+
+          <a href="#contact" class="mobile-link py-2 text-gray-300 hover:text-yellow-300">
+            Contact
+          </a>
+
+          <button onclick="openModal()" class="btn-gold rounded-full py-3 font-semibold mt-2">
+            Book Appointment
+          </button>
+
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section id="home" class="hero-bg min-h-screen pt-28 relative overflow-hidden">
+
+    <div class="absolute inset-0 stars"></div>
+
+    <div class="absolute w-72 h-72 rounded-full bg-purple-500/10 blur-3xl top-20 left-10"></div>
+    <div class="absolute w-72 h-72 rounded-full bg-yellow-500/10 blur-3xl bottom-10 right-10"></div>
+
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 min-h-[calc(100vh-112px)]
+              flex items-center relative z-10">
+
+      <div class="grid lg:grid-cols-2 gap-14 items-center w-full">
+
+        <!-- Hero Content -->
+
+        <div class="fade-up">
+
+          <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-7">
+
+            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+
+            <span class="text-xs tracking-widest uppercase text-gray-300">
+              Astrology • Guidance • Insights
+            </span>
+
+          </div>
+
+
+          <h2 class="heading-font text-4xl sm:text-5xl lg:text-7xl
+                   leading-tight font-semibold">
+
+            Discover Your
+
+            <span class="gold-text">
+              Path
+            </span>
+
+            <br>
+
+            Through the Stars
+
+          </h2>
+
+
+          <p class="mt-6 text-gray-400 max-w-xl leading-8 text-base sm:text-lg">
+
+            Get personalized astrology guidance and meaningful insights
+            to help you understand your life's important questions with
+            clarity and confidence.
+
+          </p>
+
+
+          <div class="flex flex-col sm:flex-row gap-4 mt-9">
+
+            <button onclick="openModal()" class="btn-gold px-7 py-4 rounded-full font-semibold">
+
+              <i class="fa-regular fa-calendar mr-2"></i>
+              Book An Appointment
+
+            </button>
+
+
+            <a href="#services" class="btn-outline px-7 py-4 rounded-full font-semibold text-center">
+
+              Explore Services
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+
+            </a>
+
+          </div>
+
+
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 mb-6 max-w-3xl">
+
+            <!-- Feature 1 -->
+            <div class="group flex items-center gap-4
+              rounded-2xl border border-white/10
+              bg-white/[0.04] backdrop-blur-md
+              px-4 py-4
+              hover:bg-yellow-400/[0.06]
+              hover:border-yellow-400/30
+              hover:-translate-y-1
+              transition-all duration-300">
+
+              <div class="w-11 h-11 shrink-0 rounded-xl
+                bg-yellow-400/10
+                border border-yellow-400/20
+                flex items-center justify-center
+                group-hover:bg-yellow-400/15
+                transition">
+
+                <i class="fa-solid fa-compass text-yellow-300 text-lg"></i>
+
+              </div>
+
+              <div>
+                <p class="text-sm font-semibold text-white">
+                  Personalized Guidance
+                </p>
+
+                <p class="text-xs text-gray-500 mt-1">
+                  Insights tailored to you
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="group flex items-center gap-4
+              rounded-2xl border border-white/10
+              bg-white/[0.04] backdrop-blur-md
+              px-4 py-4
+              hover:bg-yellow-400/[0.06]
+              hover:border-yellow-400/30
+              hover:-translate-y-1
+              transition-all duration-300">
+
+              <div class="w-11 h-11 shrink-0 rounded-xl
+                bg-yellow-400/10
+                border border-yellow-400/20
+                flex items-center justify-center
+                group-hover:bg-yellow-400/15
+                transition">
+
+                <i class="fa-solid fa-shield-heart text-yellow-300 text-lg"></i>
+
+              </div>
+
+              <div>
+                <p class="text-sm font-semibold text-white">
+                  Private Consultation
+                </p>
+
+                <p class="text-xs text-gray-500 mt-1">
+                  Confidential one-to-one sessions
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md px-4 py-4 hover:bg-yellow-400/[0.06] hover:border-yellow-400/30 hover:-translate-y-1 transition-all duration-300">
+              <div
+                class="w-11 h-11 shrink-0 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center group-hover:bg-yellow-400/15 transition">
+                <i class="fa-solid fa-star text-yellow-300 text-lg"></i> </div>
+              <div>
+                <p class="text-sm font-semibold text-white"> Detailed Insights </p>
+                <p class="text-xs text-gray-500 mt-1"> Thoughtful & clear guidance </p>
+              </div>
+            </div> <!-- Feature 4 -->
+            <div
+              class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md px-4 py-4 hover:bg-yellow-400/[0.06] hover:border-yellow-400/30 hover:-translate-y-1 transition-all duration-300">
+              <div
+                class="w-11 h-11 shrink-0 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center group-hover:bg-yellow-400/15 transition">
+                <i class="fa-solid fa-clock text-yellow-300 text-lg"></i> </div>
+              <div>
+                <p class="text-sm font-semibold text-white"> Flexible Appointments </p>
+                <p class="text-xs text-gray-500 mt-1"> Convenient consultation slots </p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- Hero Visual -->
+
+        <div class="relative flex justify-center">
+
+          <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full
+                    border border-yellow-400/20"></div>
+
+          <div class="absolute w-60 h-60 sm:w-80 sm:h-80 rounded-full
+                    border border-purple-400/20"></div>
+
+
+          <div class="relative floating w-64 h-64 sm:w-80 sm:h-80
+                    rounded-full glass flex items-center justify-center">
+
+            <div class="w-52 h-52 sm:w-64 sm:h-64 rounded-full
+                      bg-gradient-to-br from-purple-900/70 to-[#10091a]
+                      border border-yellow-400/30
+                      flex items-center justify-center">
+
+              <div class="text-center">
+
+                <i class="fa-solid fa-moon text-5xl sm:text-6xl text-yellow-300 mb-5"></i>
+
+                <h3 class="heading-font text-xl sm:text-2xl">
+                  AstoTalk
+                </h3>
+
+                <p class="text-xs text-gray-400 mt-2 tracking-widest">
+                  WITH VAIBHAV
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="absolute top-5 right-5 glass rounded-2xl px-4 py-3">
+            <i class="fa-solid fa-star text-yellow-300"></i>
+            <span class="text-sm ml-1">Personalized</span>
+          </div>
+
+          <div class="absolute bottom-5 left-0 glass rounded-2xl px-4 py-3">
+            <i class="fa-solid fa-sparkles text-purple-300"></i>
+            <span class="text-sm ml-1">Astrology Guidance</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="py-24 bg-[#0c0812]">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+        <div>
+
+          <span class="text-yellow-400 text-sm tracking-[4px] uppercase">
+            About AstoTalk
+          </span>
+
+          <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl mt-4">
+            Guidance That Helps You
+            <span class="gold-text">Understand Your Journey</span>
+          </h2>
+
+          <p class="text-gray-400 leading-8 mt-6">
+            AstoTalk with Vaibhav provides personalized astrology consultations
+            focused on helping individuals explore important areas of their
+            personal and professional lives.
+          </p>
+
+          <p class="text-gray-400 leading-8 mt-4">
+            Every consultation is approached with attention to your individual
+            questions, circumstances and goals, creating a private space for
+            meaningful discussion and guidance.
+          </p>
+
+
+          <div class="grid sm:grid-cols-2 gap-4 mt-8">
+
+            <div class="glass p-5 rounded-2xl card-hover">
+              <i class="fa-solid fa-user-shield text-yellow-300 text-2xl"></i>
+
+              <h3 class="font-semibold mt-4">
+                Private Consultation
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-2">
+                Comfortable and confidential sessions.
+              </p>
+            </div>
+
+
+            <div class="glass p-5 rounded-2xl card-hover">
+              <i class="fa-solid fa-compass text-yellow-300 text-2xl"></i>
+
+              <h3 class="font-semibold mt-4">
+                Personal Guidance
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-2">
+                Sessions focused on your individual questions.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="relative">
+
+          <div class="glass rounded-[2rem] p-8 sm:p-10">
+
+            <div class="w-20 h-20 rounded-2xl
+                      bg-yellow-400/10 border border-yellow-400/20
+                      flex items-center justify-center">
+
+              <i class="fa-solid fa-sun text-4xl text-yellow-300"></i>
+
+            </div>
+
+            <h3 class="heading-font text-2xl mt-8">
+              Your Questions Matter
+            </h3>
+
+            <p class="text-gray-400 leading-7 mt-4">
+              Whether you are thinking about career, relationships,
+              business or personal decisions, your consultation can be
+              tailored around the areas that matter to you.
+            </p>
+
+
+            <div class="mt-8 space-y-4">
+
+              <div class="flex gap-3">
+                <i class="fa-solid fa-check text-yellow-400 mt-1"></i>
+                <span class="text-gray-300">One-to-one consultation</span>
+              </div>
+
+              <div class="flex gap-3">
+                <i class="fa-solid fa-check text-yellow-400 mt-1"></i>
+                <span class="text-gray-300">Flexible appointment options</span>
+              </div>
+
+              <div class="flex gap-3">
+                <i class="fa-solid fa-check text-yellow-400 mt-1"></i>
+                <span class="text-gray-300">Personalized discussion</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= WHY CHOOSE US ================= -->
+
+<section id="why-choose-us" class="py-24 bg-[#090612] relative overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2
+              w-96 h-96 bg-purple-600/10
+              rounded-full blur-3xl"></div>
+
+  <div class="absolute bottom-0 left-0
+              w-72 h-72 bg-yellow-500/5
+              rounded-full blur-3xl"></div>
+
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <!-- Heading -->
+
+    <div class="text-center max-w-3xl mx-auto">
+
+      <span class="text-yellow-400 text-sm tracking-[4px] uppercase">
+        Why Choose Us
+      </span>
+
+      <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl mt-4">
+        A Consultation Designed
+        <span class="gold-text">Around You</span>
+      </h2>
+
+      <p class="text-gray-400 leading-7 mt-5">
+        At AstoTalk with Vaibhav, every consultation focuses on your
+        individual questions, concerns and goals.
+      </p>
+
+    </div>
+
+
+    <!-- Features -->
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+
+
+      <!-- Feature 1 -->
+
+      <div class="glass rounded-3xl p-7
+                  card-hover group text-center">
+
+        <div class="mx-auto w-16 h-16 rounded-2xl
+                    bg-yellow-400/10
+                    border border-yellow-400/10
+                    flex items-center justify-center
+                    group-hover:bg-yellow-400/20
+                    group-hover:scale-110
+                    transition duration-300">
+
+          <i class="fa-solid fa-user-check
+                    text-2xl text-yellow-300"></i>
+
+        </div>
+
+        <h3 class="heading-font text-xl mt-6">
+          Personalized Guidance
+        </h3>
+
+        <p class="text-gray-500 text-sm leading-7 mt-3">
+          Consultations are focused on your individual questions,
+          circumstances and areas of interest.
+        </p>
+
+      </div>
+
+
+
+      <!-- Feature 2 -->
+
+      <div class="glass rounded-3xl p-7
+                  card-hover group text-center">
+
+        <div class="mx-auto w-16 h-16 rounded-2xl
+                    bg-purple-400/10
+                    border border-purple-400/10
+                    flex items-center justify-center
+                    group-hover:bg-purple-400/20
+                    group-hover:scale-110
+                    transition duration-300">
+
+          <i class="fa-solid fa-comments
+                    text-2xl text-purple-300"></i>
+
+        </div>
+
+        <h3 class="heading-font text-xl mt-6">
+          One-to-One Sessions
+        </h3>
+
+        <p class="text-gray-500 text-sm leading-7 mt-3">
+          Get dedicated time to discuss your questions in a
+          comfortable one-to-one consultation.
+        </p>
+
+      </div>
+
+
+
+      <!-- Feature 3 -->
+
+      <div class="glass rounded-3xl p-7
+                  card-hover group text-center">
+
+        <div class="mx-auto w-16 h-16 rounded-2xl
+                    bg-blue-400/10
+                    border border-blue-400/10
+                    flex items-center justify-center
+                    group-hover:bg-blue-400/20
+                    group-hover:scale-110
+                    transition duration-300">
+
+          <i class="fa-solid fa-shield-heart
+                    text-2xl text-blue-300"></i>
+
+        </div>
+
+        <h3 class="heading-font text-xl mt-6">
+          Private & Confidential
+        </h3>
+
+        <p class="text-gray-500 text-sm leading-7 mt-3">
+          Your personal questions and consultation are treated
+          with privacy and discretion.
+        </p>
+
+      </div>
+
+
+
+      <!-- Feature 4 -->
+
+      <div class="glass rounded-3xl p-7
+                  card-hover group text-center">
+
+        <div class="mx-auto w-16 h-16 rounded-2xl
+                    bg-green-400/10
+                    border border-green-400/10
+                    flex items-center justify-center
+                    group-hover:bg-green-400/20
+                    group-hover:scale-110
+                    transition duration-300">
+
+          <i class="fa-solid fa-compass
+                    text-2xl text-green-300"></i>
+
+        </div>
+
+        <h3 class="heading-font text-xl mt-6">
+          Clear Direction
+        </h3>
+
+        <p class="text-gray-500 text-sm leading-7 mt-3">
+          Explore your concerns and gain a structured perspective
+          to help you think through your next steps.
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Bottom Highlight -->
+
+    <div class="mt-10
+                rounded-3xl
+                border border-yellow-400/10
+                bg-gradient-to-r
+                from-yellow-400/[0.07]
+                via-purple-500/[0.05]
+                to-transparent
+                p-7 sm:p-9">
+
+      <div class="flex flex-col md:flex-row
+                  items-center justify-between
+                  gap-7">
+
+        <div class="flex items-start gap-5">
+
+          <div class="w-14 h-14 shrink-0 rounded-2xl
+                      bg-yellow-400/10
+                      flex items-center justify-center">
+
+            <i class="fa-solid fa-star text-yellow-300 text-xl"></i>
+
+          </div>
+
+          <div>
+
+            <h3 class="heading-font text-xl sm:text-2xl">
+              Have a Question in Mind?
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-2">
+              Book a personalized consultation and discuss
+              what's important to you.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <button
+          onclick="openModal()"
+          class="btn-gold shrink-0
+                 px-7 py-3.5
+                 rounded-full
+                 font-semibold text-sm
+                 flex items-center gap-2">
+
+          Book Appointment
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- ================= SERVICES ================= -->
+
+  <section id="services" class="py-24 bg-[#090612]">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto">
+
+        <span class="text-yellow-400 text-sm tracking-[4px] uppercase">
+          Our Services
+        </span>
+
+        <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl mt-4">
+          Explore Our
+          <span class="gold-text">Consultation Services</span>
+        </h2>
+
+        <p class="text-gray-400 mt-5 leading-7">
+          Choose a consultation based on the area of life you would like
+          to discuss.
+        </p>
+
+      </div>
+
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
+
+        <!-- Card 1 -->
+
+        <div class="glass rounded-3xl p-7 card-hover">
+
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-briefcase text-2xl text-purple-300"></i>
+
+          </div>
+
+          <h3 class="heading-font text-xl mt-6">
+            Career Guidance
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-7 mt-3">
+            Discuss career-related questions, professional direction
+            and upcoming opportunities.
+          </p>
+
+          <button onclick="openModal('Career Guidance')" class="text-yellow-300 text-sm mt-6 hover:text-yellow-200">
+            Enquire Now
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+
+        </div>
+
+
+        <!-- Card 2 -->
+
+        <div class="glass rounded-3xl p-7 card-hover">
+
+          <div class="w-14 h-14 rounded-2xl bg-pink-500/10
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-heart text-2xl text-pink-300"></i>
+
+          </div>
+
+          <h3 class="heading-font text-xl mt-6">
+            Relationship Guidance
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-7 mt-3">
+            Explore relationship-related questions and gain a
+            personalized perspective.
+          </p>
+
+          <button onclick="openModal('Relationship Guidance')" class="text-yellow-300 text-sm mt-6">
+            Enquire Now
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+
+        </div>
+
+
+        <!-- Card 3 -->
+
+        <div class="glass rounded-3xl p-7 card-hover">
+
+          <div class="w-14 h-14 rounded-2xl bg-yellow-500/10
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-chart-line text-2xl text-yellow-300"></i>
+
+          </div>
+
+          <h3 class="heading-font text-xl mt-6">
+            Business Guidance
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-7 mt-3">
+            Consultation for entrepreneurs and professionals with
+            business-related questions.
+          </p>
+
+          <button onclick="openModal('Business Guidance')" class="text-yellow-300 text-sm mt-6">
+            Enquire Now
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+
+        </div>
+
+
+        <!-- Card 4 -->
+
+        <div class="glass rounded-3xl p-7 card-hover">
+
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-house text-2xl text-blue-300"></i>
+
+          </div>
+
+          <h3 class="heading-font text-xl mt-6">
+            Family & Personal
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-7 mt-3">
+            Discuss personal and family-related questions in a
+            private consultation.
+          </p>
+
+          <button onclick="openModal('Family & Personal')" class="text-yellow-300 text-sm mt-6">
+            Enquire Now
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+
+        </div>
+
+
+        <!-- Card 5 -->
+
+        <div class="glass rounded-3xl p-7 card-hover">
+
+          <div class="w-14 h-14 rounded-2xl bg-green-500/10
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-star text-2xl text-green-300"></i>
+
+          </div>
+
+          <h3 class="heading-font text-xl mt-6">
+            Birth Chart Consultation
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-7 mt-3">
+            A personalized consultation based on your birth details
+            and questions.
+          </p>
+
+          <button onclick="openModal('Birth Chart Consultation')" class="text-yellow-300 text-sm mt-6">
+            Enquire Now
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+
+        </div>
+
+
+        <!-- Card 6 -->
+
+        <div class="glass rounded-3xl p-7 card-hover">
+
+          <div class="w-14 h-14 rounded-2xl bg-orange-500/10
+                    flex items-center justify-center">
+
+            <i class="fa-solid fa-comments text-2xl text-orange-300"></i>
+
+          </div>
+
+          <h3 class="heading-font text-xl mt-6">
+            Personal Consultation
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-7 mt-3">
+            Have a specific question? Book a one-to-one consultation
+            around your concerns.
+          </p>
+
+          <button onclick="openModal('Personal Consultation')" class="text-yellow-300 text-sm mt-6">
+            Enquire Now
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= APPOINTMENT ================= -->
+
+<section id="appointment" class="relative py-24 overflow-hidden bg-[#08050d]">
+
+  <!-- Background Glow -->
+  <div class="absolute -top-32 -left-32 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <!-- Heading -->
+
+    <div class="text-center max-w-3xl mx-auto">
+
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full
+                   bg-yellow-400/10 border border-yellow-400/20
+                   text-yellow-300 text-xs tracking-[3px] uppercase">
+
+        <i class="fa-regular fa-calendar"></i>
+        Appointment
+
+      </span>
+
+      <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl
+                 font-semibold mt-6 leading-tight">
+
+        Let's Talk About Your
+        <span class="gold-text">Journey</span>
+
+      </h2>
+
+      <p class="text-gray-400 leading-7 mt-5 max-w-2xl mx-auto">
+
+        Have questions about your career, relationships, business or
+        personal journey? Schedule a private consultation with Vaibhav.
+
+      </p>
+
+    </div>
+
+
+    <!-- Main Appointment Box -->
+
+    <div class="mt-14 rounded-[2rem] overflow-hidden
+                border border-white/10
+                bg-gradient-to-br from-[#171021] via-[#100a18] to-[#0b0710]
+                shadow-2xl">
+
+      <div class="grid lg:grid-cols-[.9fr_1.1fr]">
+
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <div class="relative p-8 sm:p-10 lg:p-14 overflow-hidden">
+
+          <!-- Decorative Circle -->
+
+          <div class="absolute w-72 h-72 rounded-full
+                      border border-yellow-400/10
+                      -top-24 -left-24">
+          </div>
+
+          <div class="absolute w-48 h-48 rounded-full
+                      border border-purple-400/10
+                      bottom-[-80px] right-[-50px]">
+          </div>
+
+
+          <div class="relative z-10">
+
+            <span class="text-yellow-400 text-xs tracking-[3px] uppercase">
+              Personal Consultation
+            </span>
+
+            <h3 class="heading-font text-3xl sm:text-4xl mt-5 leading-tight">
+
+              Your Questions.
+              <br>
+
+              <span class="gold-text">
+                Your Journey.
+              </span>
+
+            </h3>
+
+            <p class="text-gray-400 leading-7 mt-5 max-w-md">
+
+              Every consultation is focused around your individual
+              questions and the areas of life you want to understand better.
+
+            </p>
+
+
+            <!-- Astrology Visual -->
+
+            <div class="relative w-52 h-52 sm:w-60 sm:h-60
+                        mx-auto lg:mx-0 mt-10
+                        flex items-center justify-center">
+
+              <!-- Outer Ring -->
+
+              <div class="absolute inset-0 rounded-full
+                          border border-yellow-400/20
+                          animate-[spin_25s_linear_infinite]">
+              </div>
+
+              <!-- Middle Ring -->
+
+              <div class="absolute inset-5 rounded-full
+                          border border-purple-400/20
+                          border-dashed
+                          animate-[spin_18s_linear_infinite_reverse]">
+              </div>
+
+              <!-- Center -->
+
+              <div class="relative w-32 h-32 sm:w-36 sm:h-36
+                          rounded-full
+                          bg-gradient-to-br from-purple-900
+                          to-[#120919]
+                          border border-yellow-400/30
+                          flex flex-col items-center justify-center
+                          shadow-[0_0_50px_rgba(224,170,50,.12)]">
+
+                <i class="fa-solid fa-moon text-4xl text-yellow-300"></i>
+
+                <span class="text-[10px] tracking-[3px] text-gray-400 mt-2">
+                  ASTOTALK
+                </span>
+
+              </div>
+
+
+              <!-- Small Stars -->
+
+              <i class="absolute top-2 left-12 fa-solid fa-star
+                        text-yellow-300 text-xs"></i>
+
+              <i class="absolute bottom-8 right-2 fa-solid fa-star
+                        text-purple-300 text-xs"></i>
+
+              <i class="absolute top-12 right-3 fa-solid fa-sparkles
+                        text-yellow-200 text-xs"></i>
+
+            </div>
+
+
+            <!-- Contact Options -->
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2
+                        gap-3 mt-10">
+
+              <!-- Call -->
+
+              <a
+                href="tel:+919528466560"
+                class="group flex items-center gap-3 p-4 rounded-2xl
+                       bg-white/[.035] border border-white/10
+                       hover:border-yellow-400/30
+                       hover:bg-yellow-400/[.04]
+                       transition duration-300">
+
+                <div class="w-11 h-11 rounded-xl
+                            bg-yellow-400/10
+                            flex items-center justify-center
+                            shrink-0">
+
+                  <i class="fa-solid fa-phone text-yellow-300"></i>
+
+                </div>
+
+                <div>
+
+                  <p class="text-xs text-gray-500">
+                    Call Directly
+                  </p>
+
+                  <p class="text-sm font-semibold mt-1
+                            group-hover:text-yellow-300 transition">
+
+                    +91 95284 66560
+
+                  </p>
+
+                </div>
+
+              </a>
+
+
+              <!-- WhatsApp -->
+
+              <a
+                href="https://wa.me/919528466560"
+                target="_blank"
+                class="group flex items-center gap-3 p-4 rounded-2xl
+                       bg-white/[.035] border border-white/10
+                       hover:border-green-400/30
+                       hover:bg-green-400/[.04]
+                       transition duration-300">
+
+                <div class="w-11 h-11 rounded-xl
+                            bg-green-400/10
+                            flex items-center justify-center
+                            shrink-0">
+
+                  <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
+
+                </div>
+
+                <div>
+
+                  <p class="text-xs text-gray-500">
+                    Quick Enquiry
+                  </p>
+
+                  <p class="text-sm font-semibold mt-1
+                            group-hover:text-green-400 transition">
+
+                    WhatsApp Us
+
+                  </p>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT FORM ================= -->
+
+        <div class="p-6 sm:p-8 lg:p-12 bg-white/[.025]
+                    border-t lg:border-t-0 lg:border-l border-white/10">
+
+          <div class="max-w-xl mx-auto">
+
+            <div class="flex items-start justify-between gap-4 mb-8">
+
+              <div>
+
+                <h3 class="heading-font text-2xl sm:text-3xl">
+                  Book Your Appointment
+                </h3>
+
+                <p class="text-sm text-gray-500 mt-2">
+                  Fill in your details and we'll get in touch with you.
+                </p>
+
+              </div>
+
+              <div class="hidden sm:flex w-12 h-12 rounded-xl
+                          bg-yellow-400/10
+                          items-center justify-center shrink-0">
+
+                <i class="fa-regular fa-calendar-check
+                          text-yellow-300 text-xl"></i>
+
+              </div>
+
+            </div>
+
+
+            <form onsubmit="submitForm(event)" class="space-y-5">
+
+
+              <!-- Name + Phone -->
+
+              <div class="grid sm:grid-cols-2 gap-4">
+
+                <div>
+
+                  <label class="block text-xs text-gray-500 mb-2">
+                    Your Name
+                  </label>
+
+                  <div class="relative">
+
+                    <i class="fa-regular fa-user absolute left-4 top-1/2
+                              -translate-y-1/2 text-gray-500"></i>
+
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      required
+                      class="input-style !pl-11">
+
+                  </div>
+
+                </div>
+
+
+                <div>
+
+                  <label class="block text-xs text-gray-500 mb-2">
+                    Phone Number
+                  </label>
+
+                  <div class="relative">
+
+                    <i class="fa-solid fa-phone absolute left-4 top-1/2
+                              -translate-y-1/2 text-gray-500"></i>
+
+                    <input
+                      type="tel"
+                      placeholder="Enter phone number"
+                      required
+                      class="input-style !pl-11">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- Email -->
+
+              <div>
+
+                <label class="block text-xs text-gray-500 mb-2">
+                  Email Address
+                </label>
+
+                <div class="relative">
+
+                  <i class="fa-regular fa-envelope absolute left-4 top-1/2
+                            -translate-y-1/2 text-gray-500"></i>
+
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="input-style !pl-11">
+
+                </div>
+
+              </div>
+
+
+              <!-- Service -->
+
+              <div>
+
+                <label class="block text-xs text-gray-500 mb-2">
+                  Consultation Type
+                </label>
+
+                <div class="relative">
+
+                  <i class="fa-solid fa-star absolute left-4 top-1/2
+                            -translate-y-1/2 text-gray-500 z-10"></i>
+
+                  <select class="input-style !pl-11 appearance-none">
+
+                    <option value="">
+                      Select consultation
+                    </option>
+
+                    <option>
+                      Career Guidance
+                    </option>
+
+                    <option>
+                      Relationship Guidance
+                    </option>
+
+                    <option>
+                      Business Guidance
+                    </option>
+
+                    <option>
+                      Family & Personal
+                    </option>
+
+                    <option>
+                      Birth Chart Consultation
+                    </option>
+
+                    <option>
+                      Personal Consultation
+                    </option>
+
+                  </select>
+
+                  <i class="fa-solid fa-chevron-down
+                            absolute right-4 top-1/2
+                            -translate-y-1/2
+                            text-gray-500 text-xs
+                            pointer-events-none"></i>
+
+                </div>
+
+              </div>
+
+
+              <!-- Preferred Date -->
+
+              <div class="grid sm:grid-cols-2 gap-4">
+
+                <div>
+
+                  <label class="block text-xs text-gray-500 mb-2">
+                    Preferred Date
+                  </label>
+
+                  <div class="relative">
+
+                    <i class="fa-regular fa-calendar absolute left-4 top-1/2
+                              -translate-y-1/2 text-gray-500"></i>
+
+                    <input
+                      type="date"
+                      class="input-style !pl-11">
+
+                  </div>
+
+                </div>
+
+
+                <div>
+
+                  <label class="block text-xs text-gray-500 mb-2">
+                    Preferred Time
+                  </label>
+
+                  <div class="relative">
+
+                    <i class="fa-regular fa-clock absolute left-4 top-1/2
+                              -translate-y-1/2 text-gray-500"></i>
+
+                    <input
+                      type="time"
+                      class="input-style !pl-11">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- Message -->
+
+              <div>
+
+                <label class="block text-xs text-gray-500 mb-2">
+                  Your Message
+                </label>
+
+                <div class="relative">
+
+                  <i class="fa-regular fa-message absolute left-4 top-4
+                            text-gray-500"></i>
+
+                  <textarea
+                    rows="4"
+                    placeholder="Tell us briefly about your enquiry..."
+                    class="input-style !pl-11 resize-none"></textarea>
+
+                </div>
+
+              </div>
+
+
+              <!-- Submit -->
+
+              <button
+                type="submit"
+                class="btn-gold w-full py-4 rounded-xl
+                       font-semibold flex items-center
+                       justify-center gap-3">
+
+                <span>
+                  Request Appointment
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+              </button>
+
+
+              <!-- Privacy -->
+
+              <p class="text-[11px] text-center text-gray-600 pt-1">
+
+                <i class="fa-solid fa-lock mr-1"></i>
+
+                Your information is kept private and confidential.
+
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="how-it-works" class="py-24 bg-[#0c0812] relative overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute top-20 left-0 w-80 h-80
+              bg-purple-600/10 rounded-full blur-3xl"></div>
+
+  <div class="absolute bottom-0 right-0 w-80 h-80
+              bg-yellow-500/5 rounded-full blur-3xl"></div>
+
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <!-- Heading -->
+
+    <div class="text-center max-w-2xl mx-auto">
+
+      <span class="text-yellow-400 text-sm tracking-[4px] uppercase">
+        Simple Process
+      </span>
+
+      <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl mt-4">
+        How Your
+        <span class="gold-text">Consultation Works</span>
+      </h2>
+
+      <p class="text-gray-400 leading-7 mt-5">
+        Getting started is simple. Choose your consultation,
+        share your details and connect with Vaibhav.
+      </p>
+
+    </div>
+
+
+    <!-- Steps -->
+
+    <div class="grid md:grid-cols-3 gap-6 mt-16">
+
+
+      <!-- Step 1 -->
+
+      <div class="relative">
+
+        <div class="glass rounded-3xl p-8
+                    card-hover group h-full">
+
+          <!-- Number -->
+
+          <div class="flex items-center justify-between">
+
+            <div class="w-16 h-16 rounded-2xl
+                        bg-yellow-400/10
+                        border border-yellow-400/15
+                        flex items-center justify-center
+                        group-hover:bg-yellow-400/20
+                        transition duration-300">
+
+              <i class="fa-solid fa-calendar-check
+                        text-2xl text-yellow-300"></i>
+
+            </div>
+
+            <span class="heading-font text-5xl
+                         text-white/[0.04]">
+              01
+            </span>
+
+          </div>
+
+
+          <h3 class="heading-font text-xl mt-7">
+            Book Your Appointment
+          </h3>
+
+          <p class="text-gray-500 text-sm leading-7 mt-3">
+            Choose your preferred consultation and submit your
+            contact details through the appointment form.
+          </p>
+
+        </div>
+
+        <!-- Connector -->
+
+        <div class="hidden md:block absolute top-16
+                    -right-3 w-6 z-20">
+
+          <i class="fa-solid fa-arrow-right
+                    text-yellow-400/40"></i>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Step 2 -->
+
+      <div class="relative">
+
+        <div class="glass rounded-3xl p-8
+                    card-hover group h-full">
+
+          <div class="flex items-center justify-between">
+
+            <div class="w-16 h-16 rounded-2xl
+                        bg-purple-400/10
+                        border border-purple-400/15
+                        flex items-center justify-center
+                        group-hover:bg-purple-400/20
+                        transition duration-300">
+
+              <i class="fa-solid fa-comments
+                        text-2xl text-purple-300"></i>
+
+            </div>
+
+            <span class="heading-font text-5xl
+                         text-white/[0.04]">
+              02
+            </span>
+
+          </div>
+
+
+          <h3 class="heading-font text-xl mt-7">
+            Connect With Vaibhav
+          </h3>
+
+          <p class="text-gray-500 text-sm leading-7 mt-3">
+            Once your enquiry is received, connect with Vaibhav
+            to discuss your consultation and requirements.
+          </p>
+
+        </div>
+
+        <!-- Connector -->
+
+        <div class="hidden md:block absolute top-16
+                    -right-3 w-6 z-20">
+
+          <i class="fa-solid fa-arrow-right
+                    text-purple-400/40"></i>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Step 3 -->
+
+      <div>
+
+        <div class="glass rounded-3xl p-8
+                    card-hover group h-full">
+
+          <div class="flex items-center justify-between">
+
+            <div class="w-16 h-16 rounded-2xl
+                        bg-green-400/10
+                        border border-green-400/15
+                        flex items-center justify-center
+                        group-hover:bg-green-400/20
+                        transition duration-300">
+
+             <i class="fa-solid fa-star text-2xl text-green-300"></i>
+
+            </div>
+
+            <span class="heading-font text-5xl
+                         text-white/[0.04]">
+              03
+            </span>
+
+          </div>
+
+
+          <h3 class="heading-font text-xl mt-7">
+            Begin Your Consultation
+          </h3>
+
+          <p class="text-gray-500 text-sm leading-7 mt-3">
+            Discuss your questions and areas of interest in a
+            personalized one-to-one consultation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+
+    <div class="mt-12 text-center">
+
+      <button
+        onclick="openModal()"
+        class="btn-gold px-8 py-4 rounded-full
+               font-semibold inline-flex
+               items-center gap-2">
+
+        <i class="fa-regular fa-calendar"></i>
+
+        Start Your Consultation
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+
+<section id="testimonials" class="py-24 bg-[#0c0812] relative overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute top-20 left-0 w-72 h-72
+              bg-purple-600/10 blur-[120px] rounded-full"></div>
+
+  <div class="absolute bottom-0 right-0 w-72 h-72
+              bg-yellow-500/10 blur-[120px] rounded-full"></div>
+
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <!-- Section Heading -->
+    <div class="text-center max-w-3xl mx-auto">
+
+      <span class="inline-flex items-center gap-2
+                   text-yellow-400 text-sm tracking-[4px] uppercase">
+
+        <span class="w-8 h-px bg-yellow-400/50"></span>
+
+        Testimonials
+
+        <span class="w-8 h-px bg-yellow-400/50"></span>
+
+      </span>
+
+
+      <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl mt-5">
+
+        What My
+        <span class="gold-text">Clients Say</span>
+
+      </h2>
+
+
+      <p class="text-gray-500 leading-7 mt-5">
+        Hear from people who have experienced personalized
+        consultation and guidance with AstoTalk.
+      </p>
+
+    </div>
+
+
+    <!-- Testimonials -->
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+
+      <!-- Testimonial 1 -->
+      <div class="group relative glass rounded-3xl p-7
+                  border border-white/10
+                  hover:border-yellow-400/30
+                  hover:-translate-y-2
+                  transition-all duration-500">
+
+        <!-- Quote Icon -->
+        <div class="absolute top-6 right-7
+                    text-5xl text-yellow-400/10
+                    group-hover:text-yellow-400/20
+                    transition">
+
+          <i class="fa-solid fa-quote-right"></i>
+
+        </div>
+
+
+        <!-- Rating -->
+        <div class="flex items-center gap-1 text-yellow-400 text-sm">
+
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+        </div>
+
+
+        <!-- Review -->
+        <p class="text-gray-300 leading-8 mt-6 text-[15px]">
+
+          "The consultation gave me a completely different
+          perspective on the questions I had been thinking about.
+          The session was detailed, comfortable and easy to understand."
+
+        </p>
+
+
+        <!-- Client -->
+        <div class="flex items-center gap-4 mt-8 pt-6
+                    border-t border-white/10">
+
+          <div class="w-12 h-12 rounded-full
+                      bg-gradient-to-br from-purple-500/30 to-purple-900/30
+                      border border-purple-400/20
+                      flex items-center justify-center
+                      font-semibold text-purple-200">
+
+            AS
+
+          </div>
+
+
+          <div>
+
+            <h4 class="font-semibold text-white">
+              Ananya Sharma
+            </h4>
+
+            <p class="text-xs text-gray-500 mt-1">
+              Delhi
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Testimonial 2 -->
+      <div class="group relative glass rounded-3xl p-7
+                  border border-white/10
+                  hover:border-yellow-400/30
+                  hover:-translate-y-2
+                  transition-all duration-500">
+
+        <div class="absolute top-6 right-7
+                    text-5xl text-yellow-400/10
+                    group-hover:text-yellow-400/20
+                    transition">
+
+          <i class="fa-solid fa-quote-right"></i>
+
+        </div>
+
+
+        <div class="flex items-center gap-1 text-yellow-400 text-sm">
+
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+        </div>
+
+
+        <p class="text-gray-300 leading-8 mt-6 text-[15px]">
+
+          "A very comfortable and detailed session. My questions
+          were discussed patiently and the guidance was presented
+          in a simple and understandable way."
+
+        </p>
+
+
+        <div class="flex items-center gap-4 mt-8 pt-6
+                    border-t border-white/10">
+
+          <div class="w-12 h-12 rounded-full
+                      bg-gradient-to-br from-yellow-500/30 to-yellow-900/30
+                      border border-yellow-400/20
+                      flex items-center justify-center
+                      font-semibold text-yellow-200">
+
+            RK
+
+          </div>
+
+
+          <div>
+
+            <h4 class="font-semibold text-white">
+              Rohan Kapoor
+            </h4>
+
+            <p class="text-xs text-gray-500 mt-1">
+              Noida
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Testimonial 3 -->
+      <div class="group relative glass rounded-3xl p-7
+                  border border-white/10
+                  hover:border-yellow-400/30
+                  hover:-translate-y-2
+                  transition-all duration-500">
+
+        <div class="absolute top-6 right-7
+                    text-5xl text-yellow-400/10
+                    group-hover:text-yellow-400/20
+                    transition">
+
+          <i class="fa-solid fa-quote-right"></i>
+
+        </div>
+
+
+        <div class="flex items-center gap-1 text-yellow-400 text-sm">
+
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+
+        </div>
+
+
+        <p class="text-gray-300 leading-8 mt-6 text-[15px]">
+
+          "The appointment process was simple and the consultation
+          was personalized around my concerns. I really appreciated
+          the time and attention given during the session."
+
+        </p>
+
+
+        <div class="flex items-center gap-4 mt-8 pt-6
+                    border-t border-white/10">
+
+          <div class="w-12 h-12 rounded-full
+                      bg-gradient-to-br from-pink-500/30 to-pink-900/30
+                      border border-pink-400/20
+                      flex items-center justify-center
+                      font-semibold text-pink-200">
+
+            PS
+
+          </div>
+
+
+          <div>
+
+            <h4 class="font-semibold text-white">
+              Priya Singh
+            </h4>
+
+            <p class="text-xs text-gray-500 mt-1">
+              Delhi NCR
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CTA -->
+    <div class="mt-16 text-center">
+
+      <div class="glass inline-flex flex-col sm:flex-row
+                  items-center gap-5 rounded-2xl
+                  px-6 sm:px-8 py-5
+                  border border-yellow-400/15">
+
+        <div class="text-left">
+
+          <p class="text-white font-semibold">
+            Have questions of your own?
+          </p>
+
+          <p class="text-gray-500 text-sm mt-1">
+            Book a personalized consultation with Vaibhav.
+          </p>
+
+        </div>
+
+
+        <button
+          onclick="openModal()"
+          class="btn-gold whitespace-nowrap
+                 px-6 py-3 rounded-full
+                 font-semibold text-sm
+                 hover:scale-105 transition">
+
+          <i class="fa-regular fa-calendar mr-2"></i>
+
+          Book Appointment
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="relative py-24 overflow-hidden bg-[#08050d]">
+
+  <!-- Decorative Background -->
+  <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full
+              bg-purple-600/10 blur-[120px]"></div>
+
+  <div class="absolute -bottom-40 -right-40 w-96 h-96 rounded-full
+              bg-yellow-500/10 blur-[120px]"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <!-- Section Heading -->
+
+    <div class="max-w-3xl mb-14">
+
+      <div class="flex items-center gap-3 mb-5">
+
+        <span class="w-10 h-px bg-yellow-400"></span>
+
+        <span class="text-yellow-400 text-xs sm:text-sm
+                     tracking-[4px] uppercase">
+          Contact AstoTalk
+        </span>
+
+      </div>
+
+      <h2 class="heading-font text-4xl sm:text-5xl lg:text-6xl
+                 leading-tight">
+
+        Let's Start a
+        <span class="gold-text">Conversation</span>
+
+      </h2>
+
+      <p class="text-gray-400 mt-6 max-w-2xl leading-8 text-base sm:text-lg">
+        Have a question, need guidance, or want to schedule a personal
+        consultation? Get in touch with AstoTalk with Vaibhav today.
+      </p>
+
+    </div>
+
+
+    <!-- Main Contact Layout -->
+
+    <div class="grid lg:grid-cols-[0.85fr_1.15fr] gap-7 items-stretch">
+
+
+      <!-- LEFT CONTACT PANEL -->
+
+      <div class="relative overflow-hidden rounded-[2rem]
+                  bg-gradient-to-br from-[#1a1025] to-[#0e0915]
+                  border border-white/10 p-7 sm:p-9">
+
+        <!-- Decorative Circle -->
+
+        <div class="absolute -right-20 -top-20 w-56 h-56 rounded-full
+                    border border-yellow-400/10"></div>
+
+        <div class="absolute -right-10 -top-10 w-36 h-36 rounded-full
+                    border border-purple-400/10"></div>
+
+
+        <div class="relative z-10">
+
+          <!-- Icon -->
+
+          <div class="w-16 h-16 rounded-2xl
+                      bg-gradient-to-br from-yellow-300/20 to-yellow-700/10
+                      border border-yellow-400/20
+                      flex items-center justify-center">
+
+            <i class="fa-solid fa-comments text-yellow-300 text-2xl"></i>
+
+          </div>
+
+
+          <h3 class="heading-font text-2xl sm:text-3xl mt-7">
+            Get In Touch
+          </h3>
+
+          <p class="text-gray-500 leading-7 mt-3">
+            Connect with us for appointments, consultations and
+            general enquiries.
+          </p>
+
+
+          <!-- Phone -->
+
+          <a
+            href="tel:+919528466560"
+            class="group flex items-center gap-4 mt-9 p-4 rounded-2xl
+                   bg-white/[0.03] border border-white/[0.07]
+                   hover:border-yellow-400/30
+                   hover:bg-yellow-400/[0.04]
+                   transition-all duration-300">
+
+            <div class="w-12 h-12 shrink-0 rounded-xl
+                        bg-yellow-400/10
+                        flex items-center justify-center
+                        group-hover:bg-yellow-400/20 transition">
+
+              <i class="fa-solid fa-phone text-yellow-300"></i>
+
+            </div>
+
+            <div>
+
+              <p class="text-xs uppercase tracking-widest text-gray-600">
+                Call Us
+              </p>
+
+              <p class="text-gray-200 font-semibold mt-1">
+                +91 95284 66560
+              </p>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right ml-auto text-gray-600
+                      group-hover:text-yellow-300
+                      group-hover:translate-x-1 transition-all"></i>
+
+          </a>
+
+
+          <!-- WhatsApp -->
+
+          <a
+            href="https://wa.me/919528466560"
+            target="_blank"
+            class="group flex items-center gap-4 mt-3 p-4 rounded-2xl
+                   bg-white/[0.03] border border-white/[0.07]
+                   hover:border-green-400/30
+                   hover:bg-green-400/[0.04]
+                   transition-all duration-300">
+
+            <div class="w-12 h-12 shrink-0 rounded-xl
+                        bg-green-400/10
+                        flex items-center justify-center
+                        group-hover:bg-green-400/20 transition">
+
+              <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+
+            </div>
+
+            <div>
+
+              <p class="text-xs uppercase tracking-widest text-gray-600">
+                WhatsApp
+              </p>
+
+              <p class="text-gray-200 font-semibold mt-1">
+                Chat With Us
+              </p>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right ml-auto text-gray-600
+                      group-hover:text-green-400
+                      group-hover:translate-x-1 transition-all"></i>
+
+          </a>
+
+
+          <!-- Office Locations -->
+
+          <div class="mt-9">
+
+            <p class="text-xs uppercase tracking-[3px] text-yellow-400 mb-4">
+              Our Locations
+            </p>
+
+
+            <!-- Delhi -->
+
+            <div class="flex gap-4 py-4 border-b border-white/[0.07]">
+
+              <div class="w-10 h-10 shrink-0 rounded-xl
+                          bg-purple-400/10
+                          flex items-center justify-center">
+
+                <i class="fa-solid fa-location-dot text-purple-300"></i>
+
+              </div>
+
+              <div>
+
+                <h4 class="font-semibold text-gray-200">
+                  Delhi Office
+                </h4>
+
+                <p class="text-sm text-gray-500 leading-6 mt-1">
+                  S-193, S Block, Greater Kailash 1,<br>
+                  New Delhi - 110048
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!-- Noida -->
+
+            <div class="flex gap-4 py-4">
+
+              <div class="w-10 h-10 shrink-0 rounded-xl
+                          bg-blue-400/10
+                          flex items-center justify-center">
+
+                <i class="fa-solid fa-building text-blue-300"></i>
+
+              </div>
+
+              <div>
+
+                <h4 class="font-semibold text-gray-200">
+                  Noida Office
+                </h4>
+
+                <p class="text-sm text-gray-500 leading-6 mt-1">
+                  Office No. 626, Tower 1,<br>
+                  Assotech Business Cresterra,<br>
+                  Sector 135, Noida - 201304
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT ENQUIRY FORM -->
+
+      <div class="rounded-[2rem] bg-white/[0.035]
+                  border border-white/10 p-7 sm:p-9 lg:p-10">
+
+        <div class="flex items-start justify-between gap-5 mb-8">
+
+          <div>
+
+            <span class="text-yellow-400 text-xs tracking-[3px] uppercase">
+              Send An Enquiry
+            </span>
+
+            <h3 class="heading-font text-2xl sm:text-3xl mt-3">
+              How Can We Help?
+            </h3>
+
+            <p class="text-gray-500 text-sm leading-6 mt-2">
+              Fill in your details and our team will get back to you.
+            </p>
+
+          </div>
+
+
+          <div class="hidden sm:flex w-12 h-12 rounded-xl
+                      bg-yellow-400/10
+                      items-center justify-center">
+
+            <i class="fa-regular fa-paper-plane text-yellow-300"></i>
+
+          </div>
+
+        </div>
+
+
+        <form
+          onsubmit="submitForm(event)"
+          class="space-y-5">
+
+
+          <!-- Name + Phone -->
+
+          <div class="grid sm:grid-cols-2 gap-4">
+
+            <div>
+
+              <label class="block text-xs text-gray-500 mb-2">
+                Your Name
+              </label>
+
+              <div class="relative">
+
+                <i class="fa-regular fa-user absolute left-4 top-1/2
+                          -translate-y-1/2 text-gray-600"></i>
+
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  required
+                  class="input-style !pl-11">
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <label class="block text-xs text-gray-500 mb-2">
+                Phone Number
+              </label>
+
+              <div class="relative">
+
+                <i class="fa-solid fa-phone absolute left-4 top-1/2
+                          -translate-y-1/2 text-gray-600"></i>
+
+                <input
+                  type="tel"
+                  placeholder="+91 XXXXX XXXXX"
+                  required
+                  class="input-style !pl-11">
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Email -->
+
+          <div>
+
+            <label class="block text-xs text-gray-500 mb-2">
+              Email Address
+            </label>
+
+            <div class="relative">
+
+              <i class="fa-regular fa-envelope absolute left-4 top-1/2
+                        -translate-y-1/2 text-gray-600"></i>
+
+              <input
+                type="email"
+                placeholder="your@email.com"
+                class="input-style !pl-11">
+
+            </div>
+
+          </div>
+
+
+          <!-- Service -->
+
+          <div>
+
+            <label class="block text-xs text-gray-500 mb-2">
+              Consultation Type
+            </label>
+
+            <div class="relative">
+
+              <i class="fa-solid fa-star absolute left-4 top-1/2
+                        -translate-y-1/2 text-gray-600"></i>
+
+              <select
+                class="input-style !pl-11 appearance-none">
+
+                <option value="">Select a service</option>
+
+                <option>Career Guidance</option>
+
+                <option>Relationship Guidance</option>
+
+                <option>Business Guidance</option>
+
+                <option>Family & Personal Consultation</option>
+
+                <option>Birth Chart Consultation</option>
+
+                <option>Personal Consultation</option>
+
+              </select>
+
+              <i class="fa-solid fa-chevron-down absolute right-4 top-1/2
+                        -translate-y-1/2 text-gray-600 text-xs"></i>
+
+            </div>
+
+          </div>
+
+
+          <!-- Message -->
+
+          <div>
+
+            <label class="block text-xs text-gray-500 mb-2">
+              Your Message
+            </label>
+
+            <textarea
+              rows="5"
+              placeholder="Tell us briefly about your enquiry..."
+              required
+              class="input-style resize-none"></textarea>
+
+          </div>
+
+
+          <!-- Button -->
+
+          <button
+            type="submit"
+            class="btn-gold w-full py-4 rounded-xl font-semibold
+                   flex items-center justify-center gap-3">
+
+            Send Enquiry
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+          </button>
+
+
+          <!-- Privacy Text -->
+
+          <p class="text-center text-[11px] text-gray-600 pt-1">
+
+            <i class="fa-solid fa-lock mr-1"></i>
+
+            Your information is kept private and used only
+            to respond to your enquiry.
+
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+
+    <div class="mt-7 rounded-[2rem] border border-yellow-400/10
+                bg-gradient-to-r from-yellow-400/[0.06]
+                via-purple-400/[0.04]
+                to-transparent
+                p-6 sm:p-7">
+
+      <div class="flex flex-col md:flex-row items-center
+                  justify-between gap-5 text-center md:text-left">
+
+        <div>
+
+          <h3 class="heading-font text-xl">
+            Prefer a quick conversation?
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-1">
+            Connect directly with Vaibhav on WhatsApp.
+          </p>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/919528466560"
+          target="_blank"
+          class="shrink-0 px-6 py-3.5 rounded-full
+                 border border-green-400/30
+                 text-green-400
+                 hover:bg-green-400/10
+                 transition-all">
+
+          <i class="fa-brands fa-whatsapp mr-2"></i>
+
+          Chat on WhatsApp
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+
+<footer class="relative bg-[#06030a] border-t border-yellow-500/10 overflow-hidden">
+
+  <!-- Decorative Glow -->
+  <div class="absolute -top-32 left-1/2 -translate-x-1/2
+              w-96 h-96 bg-purple-700/10 rounded-full blur-3xl"></div>
+
+  <div class="absolute bottom-0 right-0
+              w-80 h-80 bg-yellow-500/5 rounded-full blur-3xl"></div>
+
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <!-- Main Footer -->
+    <div class="py-16 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+
+
+      <!-- BRAND -->
+
+      <div class="lg:col-span-1">
+
+        <a href="#home" class="inline-flex items-center gap-3 group">
+
+          <div class="w-12 h-12 rounded-full
+                      bg-gradient-to-br from-yellow-300
+                      via-yellow-500 to-yellow-700
+                      flex items-center justify-center
+                      shadow-lg shadow-yellow-500/10
+                      group-hover:rotate-6 transition duration-300">
+
+             <i class="fa-solid fa-star-and-crescent text-black text-lg"></i>
+
+          </div>
+
+          <div>
+
+            <h2 class="heading-font text-xl font-semibold gold-text">
+              AstoTalk
+            </h2>
+
+            <p class="text-[9px] tracking-[4px] text-gray-500 uppercase">
+              With Vaibhav
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <p class="text-gray-500 text-sm leading-7 mt-6 max-w-sm">
+          Personalized astrology consultation and guidance to help
+          you explore your questions, goals and life's important
+          decisions with greater clarity.
+        </p>
+
+
+        <!-- Social / Contact -->
+
+        <div class="flex gap-3 mt-7">
+
+          <a
+            href="tel:+919528466560"
+            class="w-11 h-11 rounded-xl
+                   border border-white/10
+                   bg-white/[0.03]
+                   flex items-center justify-center
+                   text-gray-400
+                   hover:text-yellow-300
+                   hover:border-yellow-400/30
+                   hover:-translate-y-1
+                   transition duration-300">
+
+            <i class="fa-solid fa-phone"></i>
+
+          </a>
+
+
+          <a
+            href="https://wa.me/919528466560"
+            target="_blank"
+            class="w-11 h-11 rounded-xl
+                   border border-white/10
+                   bg-white/[0.03]
+                   flex items-center justify-center
+                   text-gray-400
+                   hover:text-green-400
+                   hover:border-green-400/30
+                   hover:-translate-y-1
+                   transition duration-300">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+          </a>
+
+
+          <a
+            href="#appointment"
+            class="w-11 h-11 rounded-xl
+                   border border-white/10
+                   bg-white/[0.03]
+                   flex items-center justify-center
+                   text-gray-400
+                   hover:text-yellow-300
+                   hover:border-yellow-400/30
+                   hover:-translate-y-1
+                   transition duration-300">
+
+            <i class="fa-regular fa-calendar"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- QUICK LINKS -->
+
+      <div>
+
+        <h3 class="text-white font-semibold text-sm uppercase
+                   tracking-[2px]">
+
+          Quick Links
+
+        </h3>
+
+        <div class="w-10 h-[2px] bg-yellow-400 mt-3 mb-6"></div>
+
+
+        <ul class="space-y-4 text-sm">
+
+          <li>
+            <a href="#home"
+               class="text-gray-500 hover:text-yellow-300
+                      hover:translate-x-1 inline-block transition">
+
+              <i class="fa-solid fa-angle-right text-[10px] mr-2"></i>
+              Home
+
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#about"
+               class="text-gray-500 hover:text-yellow-300
+                      hover:translate-x-1 inline-block transition">
+
+              <i class="fa-solid fa-angle-right text-[10px] mr-2"></i>
+              About Us
+
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#services"
+               class="text-gray-500 hover:text-yellow-300
+                      hover:translate-x-1 inline-block transition">
+
+              <i class="fa-solid fa-angle-right text-[10px] mr-2"></i>
+              Services
+
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#testimonials"
+               class="text-gray-500 hover:text-yellow-300
+                      hover:translate-x-1 inline-block transition">
+
+              <i class="fa-solid fa-angle-right text-[10px] mr-2"></i>
+              What My Clients Say
+
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#appointment"
+               class="text-gray-500 hover:text-yellow-300
+                      hover:translate-x-1 inline-block transition">
+
+              <i class="fa-solid fa-angle-right text-[10px] mr-2"></i>
+              Appointment
+
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#contact"
+               class="text-gray-500 hover:text-yellow-300
+                      hover:translate-x-1 inline-block transition">
+
+              <i class="fa-solid fa-angle-right text-[10px] mr-2"></i>
+              Contact
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <!-- SERVICES -->
+
+      <div>
+
+        <h3 class="text-white font-semibold text-sm uppercase
+                   tracking-[2px]">
+
+          Services
+
+        </h3>
+
+        <div class="w-10 h-[2px] bg-yellow-400 mt-3 mb-6"></div>
+
+
+        <ul class="space-y-4 text-sm">
+
+          <li class="text-gray-500 hover:text-gray-300 transition">
+            Career Guidance
+          </li>
+
+          <li class="text-gray-500 hover:text-gray-300 transition">
+            Relationship Guidance
+          </li>
+
+          <li class="text-gray-500 hover:text-gray-300 transition">
+            Business Guidance
+          </li>
+
+          <li class="text-gray-500 hover:text-gray-300 transition">
+            Birth Chart Consultation
+          </li>
+
+          <li class="text-gray-500 hover:text-gray-300 transition">
+            Family & Personal Guidance
+          </li>
+
+          <li class="text-gray-500 hover:text-gray-300 transition">
+            Personal Consultation
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <!-- CONTACT -->
+
+      <div>
+
+        <h3 class="text-white font-semibold text-sm uppercase
+                   tracking-[2px]">
+
+          Get In Touch
+
+        </h3>
+
+        <div class="w-10 h-[2px] bg-yellow-400 mt-3 mb-6"></div>
+
+
+        <!-- Phone -->
+
+        <a
+          href="tel:+919528466560"
+          class="flex gap-4 group mb-6">
+
+          <div class="w-10 h-10 shrink-0 rounded-xl
+                      bg-yellow-400/10
+                      border border-yellow-400/10
+                      flex items-center justify-center
+                      group-hover:bg-yellow-400/20
+                      transition">
+
+            <i class="fa-solid fa-phone text-yellow-300 text-sm"></i>
+
+          </div>
+
+          <div>
+
+            <p class="text-[11px] uppercase tracking-widest text-gray-600">
+              Call Us
+            </p>
+
+            <p class="text-sm text-gray-300 mt-1
+                      group-hover:text-yellow-300 transition">
+
+              +91 95284 66560
+
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <!-- Delhi -->
+
+        <div class="flex gap-4 mb-6">
+
+          <div class="w-10 h-10 shrink-0 rounded-xl
+                      bg-purple-400/10
+                      border border-purple-400/10
+                      flex items-center justify-center">
+
+            <i class="fa-solid fa-location-dot text-purple-300 text-sm"></i>
+
+          </div>
+
+          <div>
+
+            <p class="text-[11px] uppercase tracking-widest text-gray-600">
+              Delhi Office
+            </p>
+
+            <p class="text-sm text-gray-500 leading-6 mt-1">
+              S-193, S Block,<br>
+              Greater Kailash 1,<br>
+              New Delhi - 110048
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Noida -->
+
+        <div class="flex gap-4">
+
+          <div class="w-10 h-10 shrink-0 rounded-xl
+                      bg-blue-400/10
+                      border border-blue-400/10
+                      flex items-center justify-center">
+
+            <i class="fa-solid fa-building text-blue-300 text-sm"></i>
+
+          </div>
+
+          <div>
+
+            <p class="text-[11px] uppercase tracking-widest text-gray-600">
+              Noida Office
+            </p>
+
+            <p class="text-sm text-gray-500 leading-6 mt-1">
+              Office No. 626, Tower 1,<br>
+              Assotech Business Cresterra,<br>
+              Sector 135, Noida - 201304
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- APPOINTMENT CTA -->
+
+    <div class="border-t border-white/10 pt-8 pb-8">
+
+      <div class="relative overflow-hidden
+                  rounded-2xl
+                  border border-yellow-400/15
+                  bg-gradient-to-r
+                  from-yellow-400/[0.06]
+                  via-purple-500/[0.05]
+                  to-transparent
+                  p-6 sm:p-7">
+
+        <div class="flex flex-col md:flex-row
+                    items-start md:items-center
+                    justify-between gap-6">
+
+          <div>
+
+            <div class="flex items-center gap-2">
+
+              <span class="w-2 h-2 rounded-full bg-green-400
+                           shadow-lg shadow-green-400/50"></span>
+
+              <span class="text-xs uppercase tracking-[2px]
+                           text-gray-500">
+
+                Appointments Available
+
+              </span>
+
+            </div>
+
+            <h3 class="heading-font text-xl sm:text-2xl mt-2">
+              Have a question you'd like to discuss?
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-2">
+              Book a personalized consultation with Vaibhav.
+            </p>
+
+          </div>
+
+
+          <a
+            href="#appointment"
+            class="btn-gold shrink-0 px-6 py-3.5
+                   rounded-full font-semibold text-sm
+                   flex items-center gap-2">
+
+            Book Appointment
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- BOTTOM BAR -->
+
+    <div class="border-t border-white/10
+                py-6
+                flex flex-col md:flex-row
+                items-center justify-between
+                gap-4">
+
+      <p class="text-xs text-gray-600 text-center md:text-left">
+
+        © 2026
+        <span class="text-gray-400">
+          AstoTalk with Vaibhav
+        </span>.
+        All Rights Reserved.
+
+      </p>
+
+
+      <div class="flex items-center gap-5 text-xs text-gray-600">
+
+        <a href="#home"
+           class="hover:text-yellow-300 transition">
+          Privacy
+        </a>
+
+        <span class="w-1 h-1 rounded-full bg-gray-700"></span>
+
+        <a href="#contact"
+           class="hover:text-yellow-300 transition">
+          Contact
+        </a>
+
+        <span class="w-1 h-1 rounded-full bg-gray-700"></span>
+
+        <a href="#appointment"
+           class="hover:text-yellow-300 transition">
+          Book Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+
+  <div class="fixed bottom-10 right-5 z-40 flex flex-col gap-3">
+
+    <a href="https://wa.me/919528466560?text=Hello%20Vaibhav%2C%20I%20am%20interested%20in%20booking%20an%20appointment.%20Please%20contact%20me." target="_blank" class="w-14 h-14 rounded-full bg-green-500 text-white
+           flex items-center justify-center text-2xl shadow-xl
+           hover:scale-110 transition" aria-label="WhatsApp">
+
+      <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <a href="tel:+919528466560" class="w-14 h-14 rounded-full btn-gold
+           flex items-center justify-center text-xl shadow-xl
+           hover:scale-110 transition" aria-label="Call">
+
+      <i class="fa-solid fa-phone"></i>
+
+    </a>
+
+  </div>
+
+
+  <!-- ================= ENQUIRY MODAL ================= -->
+
+  <div id="enquiryModal" class="modal fixed inset-0 z-[100] bg-black/75 backdrop-blur-sm
+         flex items-center justify-center p-5">
+
+    <div class="modal-box glass rounded-3xl w-full max-w-lg p-6 sm:p-8 relative">
+
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400
+             hover:text-white text-xl">
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+
+      <div class="pr-8">
+
+        <span class="text-yellow-400 text-xs tracking-[3px] uppercase">
+          Enquiry
+        </span>
+
+        <h2 class="heading-font text-2xl sm:text-3xl mt-2">
+          Book Your Consultation
+        </h2>
+
+        <p class="text-gray-500 text-sm mt-3">
+          Fill in your details and we'll get in touch with you.
+        </p>
+
+      </div>
+
+
+      <form onsubmit="submitForm(event)" class="space-y-4 mt-7">
+
+        <input id="modalService" type="text" placeholder="Service / Consultation" class="input-style">
+
+        <input type="text" placeholder="Your Name" required class="input-style">
+
+        <input type="tel" placeholder="Phone Number" required class="input-style">
+
+        <input type="email" placeholder="Email Address" class="input-style">
+
+        <textarea rows="4" placeholder="Your enquiry..." class="input-style"></textarea>
+
+        <button type="submit" class="btn-gold w-full py-4 rounded-xl font-semibold">
+
+          Submit Enquiry
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    // Mobile Menu
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("active");
+
+      const icon = menuBtn.querySelector("i");
+
+      if (mobileMenu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+      } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      }
+
+    });
+
+
+    // Close mobile menu after clicking link
+
+    document.querySelectorAll(".mobile-link").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("active");
+
+        const icon = menuBtn.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+      });
+
+    });
+
+
+    // Open Modal
+
+    function openModal(service = "") {
+
+      const modal = document.getElementById("enquiryModal");
+
+      const serviceInput = document.getElementById("modalService");
+
+      serviceInput.value = service;
+
+      modal.classList.add("active");
+
+      document.body.style.overflow = "hidden";
+
+    }
+
+
+    // Close Modal
+
+    function closeModal() {
+
+      const modal = document.getElementById("enquiryModal");
+
+      modal.classList.remove("active");
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    // Close when clicking outside
+
+    document.getElementById("enquiryModal").addEventListener("click", function (e) {
+
+      if (e.target === this) {
+        closeModal();
+      }
+
+    });
+
+
+    // Escape key
+
+    document.addEventListener("keydown", function (e) {
+
+      if (e.key === "Escape") {
+        closeModal();
+      }
+
+    });
+
+
+    // Demo form submit
+
+    function submitForm(event) {
+
+      event.preventDefault();
+
+      alert(
+        "Thank you for your enquiry! We will contact you shortly."
+      );
+
+      event.target.reset();
+
+      closeModal();
+
+    }
+
+  </script>
+
+</body>
+
+</html>
