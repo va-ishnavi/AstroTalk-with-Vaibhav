@@ -2808,6 +2808,37 @@ He does not just read charts. He reads what your soul wants to hear.
 
             </a>
 
+            <!-- Email -->
+            <a href="mailto:Memiyavaibhav@gmail.com" class="group flex items-center gap-4 mt-3 p-4 rounded-2xl
+                   bg-white/[0.03] border border-white/[0.07]
+                   hover:border-blue-400/30
+                   hover:bg-blue-400/[0.04]
+                   transition-all duration-300">
+
+              <div class="w-12 h-12 shrink-0 rounded-xl
+                        bg-blue-400/10
+                        flex items-center justify-center
+                        group-hover:bg-blue-400/20 transition">
+
+                <i class="fa-regular fa-envelope text-blue-400 text-lg"></i>
+
+              </div>
+
+              <div>
+
+                <p class="text-xs uppercase tracking-widest text-gray-600">
+                  Email Us
+                </p>
+
+                <p class="text-gray-200 font-semibold mt-1">
+                  Memiyavaibhav@gmail.com
+                </p>
+                     
+              </div>
+                    <i class="fa-solid fa-arrow-right ml-auto text-gray-600
+                      group-hover:text-green-400
+                      group-hover:translate-x-1 transition-all"></i>
+            </a>
 
             <!-- Office Locations -->
 <!--<div class="mt-9">
@@ -3140,7 +3171,7 @@ He does not just read charts. He reads what your soul wants to hear.
 
             <div class="flex items-center justify-center group-hover:rotate-6 transition duration-300">
 
-              <img src="images/logo.png" alt="AstroTalk with Vaibhav" class="h-16 w-auto object-contain ">
+              <img src="images/logo02.png" alt="AstroTalk with Vaibhav" class="h-16 w-auto object-contain ">
 
             </div>
 
@@ -3189,7 +3220,7 @@ He does not just read charts. He reads what your soul wants to hear.
             </a>
 
 
-            <a href="#appointment" class="w-11 h-11 rounded-xl
+            <a href="mailto:Memiyavaibhav@gmail.com" class="w-11 h-11 rounded-xl
                    border border-white/10
                    bg-white/[0.03]
                    flex items-center justify-center
@@ -3199,7 +3230,7 @@ He does not just read charts. He reads what your soul wants to hear.
                    hover:-translate-y-1
                    transition duration-300">
 
-              <i class="fa-regular fa-calendar"></i>
+              <i class="fa-regular fa-envelope"></i>
 
             </a>
 
@@ -3620,7 +3651,7 @@ He does not just read charts. He reads what your soul wants to hear.
       <form onsubmit="submitForm(event)" class="space-y-4 mt-7">
 
         <input id="modalService" type="text" placeholder="Service / Consultation" class="input-style">
-        <select class="input-style">
+        <select name="service" class="input-style">
           <option value="">Select a service</option>
           <option>Career Guidance</option>
           <option>Relationship Guidance</option>
@@ -3631,13 +3662,13 @@ He does not just read charts. He reads what your soul wants to hear.
           <option>Others Consultation</option>
         </select>
 
-        <input type="text" placeholder="Your Name" required class="input-style">
+        <input type="text" name="name" placeholder="Your Name" required class="input-style">
 
-        <input type="tel" placeholder="Phone Number" required class="input-style">
+        <input type="tel" name="phone" placeholder="Phone Number" required class="input-style">
 
-        <input type="email" placeholder="Email Address" class="input-style">
+        <input type="email" name="email" placeholder="Email Address" class="input-style">
 
-        <textarea rows="4" placeholder="Your enquiry..." class="input-style"></textarea>
+        <textarea name="message" rows="4" placeholder="Your enquiry..." class="input-style"></textarea>
 
         <button type="submit" class="btn-gold w-full py-4 rounded-xl font-semibold">
 
@@ -3749,20 +3780,46 @@ He does not just read charts. He reads what your soul wants to hear.
 
 
     // Demo form submit
+// Send enquiry details to WhatsApp
+// WhatsApp Enquiry Form Submit
 
-    function submitForm(event) {
 
-      event.preventDefault();
+function submitForm(event) {
+  event.preventDefault();
 
-      alert(
-        "Thank you for your enquiry! We will contact you shortly."
-      );
+  const form = event.currentTarget;
+  const data = new FormData(form);
 
-      event.target.reset();
+  const name = data.get("name")?.trim() || "Not provided";
+  const phone = data.get("phone")?.trim() || "Not provided";
+  const email = data.get("email")?.trim() || "Not provided";
+  const service = data.get("service") || "Not selected";
+  const message = data.get("message")?.trim() || "No message provided";
 
-      closeModal();
+  const whatsappNumber = "919027690490";
 
-    }
+  const whatsappMessage = `
+Hello Vaibhav! You have a new enquiry from your website.
+
+*AstroTalk with Vaibhav - New Enquiry*
+
+Please contact this client regarding their consultation.
+  `.trim();
+
+  const whatsappURL =
+    "https://wa.me/" + whatsappNumber +
+    "?text=" + encodeURIComponent(whatsappMessage);
+
+  window.open(whatsappURL, "_blank");
+
+  form.reset();
+
+  if (typeof closeModal === "function") {
+    closeModal();
+  }
+}
+
+
 
   </script>
 
