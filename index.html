@@ -2760,10 +2760,9 @@ He does not just read charts. He reads what your soul wants to hear.
                   Call Us
                 </p>
 
-                <p class="text-gray-200 font-semibold mt-1 text-sm sm:text-base
-          whitespace-nowrap">
-  +91 95284 66560
-</p>
+                <p class="text-gray-200 font-semibold mt-1">
+                  +91 95284 66560
+                </p>
 
               </div>
 
@@ -2797,8 +2796,7 @@ He does not just read charts. He reads what your soul wants to hear.
                   WhatsApp
                 </p>
 
-                <p class="text-gray-200 font-semibold mt-1 text-sm sm:text-base
-          whitespace-nowrap">
+                <p class="text-gray-200 font-semibold mt-1">
                   Chat With Us
                 </p>
 
@@ -2832,8 +2830,7 @@ He does not just read charts. He reads what your soul wants to hear.
                   Email Us
                 </p>
 
-                <p class="text-gray-200 font-semibold mt-1 text-sm sm:text-base
-          whitespace-nowrap">
+                <p class="text-gray-200 font-semibold mt-1">
                   Memiyavaibhav@gmail.com
                 </p>
                      
@@ -2970,7 +2967,7 @@ He does not just read charts. He reads what your soul wants to hear.
                   <i class="fa-regular fa-user absolute left-4 top-1/2
                           -translate-y-1/2 text-gray-600"></i>
 
-                  <input type="text" placeholder="Enter your name" required class="input-style !pl-11">
+                  <input type="text" name="name" placeholder="Enter your name" required class="input-style !pl-11">
 
                 </div>
 
@@ -2988,7 +2985,7 @@ He does not just read charts. He reads what your soul wants to hear.
                   <i class="fa-solid fa-phone absolute left-4 top-1/2
                           -translate-y-1/2 text-gray-600"></i>
 
-                  <input type="tel" placeholder="+91 XXXXX XXXXX" required class="input-style !pl-11">
+                  <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required class="input-style !pl-11">
 
                 </div>
 
@@ -3010,7 +3007,7 @@ He does not just read charts. He reads what your soul wants to hear.
                 <i class="fa-regular fa-envelope absolute left-4 top-1/2
                         -translate-y-1/2 text-gray-600"></i>
 
-                <input type="email" placeholder="your@email.com" class="input-style !pl-11">
+                <input type="email" name="email" placeholder="your@email.com" class="input-style !pl-11">
 
               </div>
 
@@ -3030,7 +3027,7 @@ He does not just read charts. He reads what your soul wants to hear.
                 <i class="fa-solid fa-star absolute left-4 top-1/2
                         -translate-y-1/2 text-gray-600"></i>
 
-                <select class="input-style !pl-11 appearance-none">
+                <select name="service" class="input-style !pl-11 appearance-none">
 
                   <option value="">Select a service</option>
 
@@ -3066,7 +3063,7 @@ He does not just read charts. He reads what your soul wants to hear.
                 Your Message
               </label>
 
-              <textarea rows="5" placeholder="Tell us briefly about your enquiry..." required
+              <textarea name="message" rows="5" placeholder="Tell us briefly about your enquiry..." required
                 class="input-style resize-none"></textarea>
 
             </div>
@@ -3077,7 +3074,10 @@ He does not just read charts. He reads what your soul wants to hear.
             <button type="submit" class="btn-gold w-full py-4 rounded-xl font-semibold
                    flex items-center justify-center gap-3">
 
-              Send Enquiry
+              <a href="https://wa.me/919528466560" target="_blank" class="text-black text-m font-semibold">
+                 Send Enquiry on WhatsApp
+
+              </a>
 
               <i class="fa-solid fa-arrow-right"></i>
 
@@ -3145,6 +3145,47 @@ He does not just read charts. He reads what your soul wants to hear.
     </div>
 
   </section>
+
+  <script>
+    
+function sendEnquiryToWhatsApp(event) {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  const data = new FormData(form);
+
+  const name = data.get("name")?.trim() || "Not provided";
+  const phone = data.get("phone")?.trim() || "Not provided";
+  const email = data.get("email")?.trim() || "Not provided";
+  const service = data.get("service") || "Not selected";
+  const message = data.get("message")?.trim() || "No message provided";
+
+  // Vaibhav's WhatsApp number with India country code
+  const whatsappNumber = "919528466560";
+
+  const whatsappMessage = `
+Hello Vaibhav! 🙏
+
+*AstroTalk with Vaibhav - New Website Enquiry*
+
+👤 *Client Name:* ${name}
+📞 *Phone Number:* ${phone}
+📧 *Email:* ${email}
+🔮 *Consultation Type:* ${service}
+
+💬 *Client Message:*
+${message}
+
+Please contact this client regarding their consultation.
+  `.trim();
+
+  const whatsappURL =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(whatsappURL, "_blank");
+}
+
+  </script>
 
 
   <!-- ================= FOOTER ================= -->
@@ -3782,8 +3823,7 @@ He does not just read charts. He reads what your soul wants to hear.
     });
 
 
-    // Demo form submit
-// Send enquiry details to WhatsApp
+    
 // WhatsApp Enquiry Form Submit
 
 
@@ -3799,7 +3839,7 @@ function submitForm(event) {
   const service = data.get("service") || "Not selected";
   const message = data.get("message")?.trim() || "No message provided";
 
-  const whatsappNumber = "919027690490";
+  const whatsappNumber = "9195284 66560";
 
   const whatsappMessage = `
 Hello Vaibhav! You have a new enquiry from your website.
