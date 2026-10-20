@@ -1837,7 +1837,10 @@ He does not just read charts. He reads what your soul wants to hear.
               </div>
 
 
-              <form onsubmit="submitForm(event)" class="space-y-5">
+              <!-- <form onsubmit="submitForm(event)" class="space-y-5"> -->
+                <form id="appointmentForm"
+      onsubmit="sendAppointmentToWhatsApp(event)"
+      class="space-y-5">
 
 
                 <!-- Name + Phone -->
@@ -1855,7 +1858,7 @@ He does not just read charts. He reads what your soul wants to hear.
                       <i class="fa-regular fa-user absolute left-4 top-1/2
                               -translate-y-1/2 text-gray-500"></i>
 
-                      <input type="text" placeholder="Enter your name" required class="input-style !pl-11">
+                      <input type="text" name="name" placeholder="Enter your name" required class="input-style !pl-11">
 
                     </div>
 
@@ -1873,7 +1876,7 @@ He does not just read charts. He reads what your soul wants to hear.
                       <i class="fa-solid fa-phone absolute left-4 top-1/2
                               -translate-y-1/2 text-gray-500"></i>
 
-                      <input type="tel" placeholder="Enter phone number" required class="input-style !pl-11">
+                      <input type="tel" name="phone" placeholder="Enter phone number" required class="input-style !pl-11">
 
                     </div>
 
@@ -1895,7 +1898,7 @@ He does not just read charts. He reads what your soul wants to hear.
                     <i class="fa-regular fa-envelope absolute left-4 top-1/2
                             -translate-y-1/2 text-gray-500"></i>
 
-                    <input type="email" placeholder="Enter your email" class="input-style !pl-11">
+                    <input type="email" name="email" placeholder="Enter your email" class="input-style !pl-11">
 
                   </div>
 
@@ -1915,7 +1918,7 @@ He does not just read charts. He reads what your soul wants to hear.
                     <i class="fa-solid fa-star absolute left-4 top-1/2
                             -translate-y-1/2 text-gray-500 z-10"></i>
 
-                    <select class="input-style !pl-11 appearance-none">
+                    <select name="service" class="input-style !pl-11 appearance-none">
 
                       <option value="">
                         Select consultation
@@ -1959,7 +1962,7 @@ He does not just read charts. He reads what your soul wants to hear.
 
                 <!-- Location -->
 
-<div>
+                <div>
 
   <label class="block text-xs text-gray-500 mb-2">
     Location
@@ -1970,7 +1973,7 @@ He does not just read charts. He reads what your soul wants to hear.
     <i class="fa-solid fa-location-dot absolute left-4 top-1/2
             -translate-y-1/2 text-gray-500 z-10"></i>
 
-    <select class="input-style !pl-11 appearance-none">
+    <select name="location" class="input-style !pl-11 appearance-none">
 
       <option value="">
         Select location
@@ -2002,7 +2005,7 @@ He does not just read charts. He reads what your soul wants to hear.
 
   </div>
 
-</div>
+                </div>
 
 
                 <!-- Preferred Date -->
@@ -2021,7 +2024,7 @@ He does not just read charts. He reads what your soul wants to hear.
       <i class="fa-regular fa-calendar absolute left-4 top-1/2
               -translate-y-1/2 text-gray-500"></i>
 
-      <input type="date" class="input-style !pl-11">
+      <input type="date" name="dob" class="input-style !pl-11">
 
     </div>
 
@@ -2040,7 +2043,7 @@ He does not just read charts. He reads what your soul wants to hear.
       <i class="fa-regular fa-clock absolute left-4 top-1/2
               -translate-y-1/2 text-gray-500"></i>
 
-      <input type="time" class="input-style !pl-11">
+      <input type="time" name="time" class="input-style !pl-11">
 
     </div>
 
@@ -2061,6 +2064,7 @@ He does not just read charts. He reads what your soul wants to hear.
 
       <input 
         type="text"
+        name="birth_location"
         placeholder="Enter location"
         class="input-style !pl-11"
       >
@@ -2085,7 +2089,7 @@ He does not just read charts. He reads what your soul wants to hear.
                     <i class="fa-regular fa-message absolute left-4 top-4
                             text-gray-500"></i>
 
-                    <textarea rows="4" placeholder="Tell us briefly about your enquiry..."
+                    <textarea  name="message" rows="4" placeholder="Tell us briefly about your enquiry..."
                       class="input-style !pl-11 resize-none"></textarea>
 
                   </div>
@@ -3829,42 +3833,54 @@ Please contact this client regarding their consultation.
     
 // WhatsApp Enquiry Form Submit
 
-
-function submitForm(event) {
+function sendAppointmentToWhatsApp(event) {
   event.preventDefault();
 
   const form = event.currentTarget;
   const data = new FormData(form);
 
-  const name = data.get("name")?.trim() || "Not provided";
-  const phone = data.get("phone")?.trim() || "Not provided";
-  const email = data.get("email")?.trim() || "Not provided";
-  const service = data.get("service") || "Not selected";
-  const message = data.get("message")?.trim() || "No message provided";
+  const getValue = (field) => {
+    return data.get(field)?.toString().trim() || "Not provided";
+  };
 
-  const whatsappNumber = "9195284 66560";
+  const name = getValue("name");
+  const phone = getValue("phone");
+  const email = getValue("email");
+  const service = getValue("service");
+  const location = getValue("location");
+  const dob = getValue("dob");
+  const birthTime = getValue("birthTime");
+  const birthLocation = getValue("birthLocation");
+  const message = getValue("message");
+
+  const whatsappNumber = "919027690490";
 
   const whatsappMessage = `
-Hello Vaibhav! You have a new enquiry from your website.
+🙏 *NEW APPOINTMENT REQUEST*
+*AstroTalk with Vaibhav*
 
-*AstroTalk with Vaibhav - New Enquiry*
+👤 *Client Name:* ${name}
+📞 *Phone Number:* ${phone}
+📧 *Email Address:* ${email}
 
-Please contact this client regarding their consultation.
+🔮 *Consultation Type:* ${service}
+📍 *Preferred Location:* ${location}
+
+🎂 *Date of Birth:* ${dob}
+🕒 *Exact Time of Birth:* ${birthTime}
+🌍 *Birth Location:* ${birthLocation}
+
+💬 *Client Message:*
+${message}
+
+Please contact the client regarding their appointment.
   `.trim();
 
   const whatsappURL =
-    "https://wa.me/" + whatsappNumber +
-    "?text=" + encodeURIComponent(whatsappMessage);
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   window.open(whatsappURL, "_blank");
-
-  form.reset();
-
-  if (typeof closeModal === "function") {
-    closeModal();
-  }
 }
-
 
 
   </script>
