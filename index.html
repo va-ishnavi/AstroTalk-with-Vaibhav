@@ -2956,7 +2956,7 @@ He does not just read charts. He reads what your soul wants to hear.
           </div>
 
 
-          <form onsubmit="sendAppointmentToWhatsApp(event)" class="space-y-5">
+          <form onsubmit="submitForm(event)" class="space-y-5">
 
 
             <!-- Name + Phone -->
@@ -3152,6 +3152,47 @@ He does not just read charts. He reads what your soul wants to hear.
     </div>
 
   </section>
+
+  <script>
+    
+function submitForm(event) {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  const data = new FormData(form);
+
+  const getValue = (name) =>
+    data.get(name)?.toString().trim() || "Not provided";
+
+  const name = getValue("name");
+  const phone = getValue("phone");
+  const email = getValue("email");
+  const service = getValue("service");
+  const message = getValue("message");
+
+  const whatsappNumber = "919027690490";
+
+  const whatsappMessage = `
+🙏 *NEW APPOINTMENT ENQUIRY*
+*AstroTalk with Vaibhav*
+
+👤 *Client Name:* ${name}
+📞 *Client Phone:* ${phone}
+📧 *Client Email:* ${email}
+🔮 *Consultation Type:* ${service}
+
+💬 *Client Message:*
+${message}
+
+Please contact the client regarding their appointment.
+  `.trim();
+
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(url, "_blank");
+}
+
+  </script>
 
 
   <!-- ================= FOOTER ================= -->
@@ -3658,7 +3699,7 @@ He does not just read charts. He reads what your soul wants to hear.
       </div>
 
 
-      <form onsubmit="sendAppointmentToWhatsApp(event)" class="space-y-4 mt-7">
+      <form onsubmit="submitForm(event)" class="space-y-4 mt-7">
 
         <input id="modalService" type="text" placeholder="Service / Consultation" class="input-style">
         <select name="service" class="input-style">
