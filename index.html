@@ -2956,7 +2956,7 @@ He does not just read charts. He reads what your soul wants to hear.
           </div>
 
 
-          <form onsubmit="submitForm(event)" class="space-y-5">
+          <form onsubmit="sendAppointmentToWhatsApp(event)" class="space-y-5">
 
 
             <!-- Name + Phone -->
@@ -3081,8 +3081,8 @@ He does not just read charts. He reads what your soul wants to hear.
             <button type="submit" class="btn-gold w-full py-4 rounded-xl font-semibold
                    flex items-center justify-center gap-3">
 
-              <a href="https://wa.me/919528466560" target="_blank" class="text-black text-m font-semibold">
-                 Send Enquiry on WhatsApp
+              <a href="https://wa.me/919027690490" target="_blank" class="text-black text-m font-semibold">
+                 Send Appointment on WhatsApp
 
               </a>
 
@@ -3152,47 +3152,6 @@ He does not just read charts. He reads what your soul wants to hear.
     </div>
 
   </section>
-
-  <script>
-    
-function sendEnquiryToWhatsApp(event) {
-  event.preventDefault();
-
-  const form = event.currentTarget;
-  const data = new FormData(form);
-
-  const name = data.get("name")?.trim() || "Not provided";
-  const phone = data.get("phone")?.trim() || "Not provided";
-  const email = data.get("email")?.trim() || "Not provided";
-  const service = data.get("service") || "Not selected";
-  const message = data.get("message")?.trim() || "No message provided";
-
-  // Vaibhav's WhatsApp number with India country code
-  const whatsappNumber = "919528466560";
-
-  const whatsappMessage = `
-Hello Vaibhav! 🙏
-
-*AstroTalk with Vaibhav - New Website Enquiry*
-
-👤 *Client Name:* ${name}
-📞 *Phone Number:* ${phone}
-📧 *Email:* ${email}
-🔮 *Consultation Type:* ${service}
-
-💬 *Client Message:*
-${message}
-
-Please contact this client regarding their consultation.
-  `.trim();
-
-  const whatsappURL =
-    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-  window.open(whatsappURL, "_blank");
-}
-
-  </script>
 
 
   <!-- ================= FOOTER ================= -->
@@ -3699,7 +3658,7 @@ Please contact this client regarding their consultation.
       </div>
 
 
-      <form onsubmit="submitForm(event)" class="space-y-4 mt-7">
+      <form onsubmit="sendAppointmentToWhatsApp(event)" class="space-y-4 mt-7">
 
         <input id="modalService" type="text" placeholder="Service / Consultation" class="input-style">
         <select name="service" class="input-style">
